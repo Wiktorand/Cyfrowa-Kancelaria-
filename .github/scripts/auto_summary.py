@@ -1,18 +1,33 @@
 import os
 import openai
 import pdfplumber
+import pytesseract
+from PIL import Image
 from docx import Document
+from odf.opendocument import load
+from odf.text import P
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 FOLDERS = ["Cywilna", "Apelacja", "Egzekucja"]
 
 def extract_text_from_pdf(path):
+    text = ""
     try:
         with pdfplumber.open(path) as pdf:
-            return "\n".join([page.extract_text() or "" for page in pdf.pages])
+            for page in pdf.pages:
+                page_text = page.extract_text()
+                if page_text and page_text.strip():
+                    text += page_text + "\n"
+                else:
+                    # OCR dla stron bez tekstu
+                    img = page.to_image(resolution=300)
+                    ocr_text = pytesseract.image_to_string(img.original)
+                    if ocr_text.strip():
+                        text += ocr_text + "\n"
     except Exception as e:
-        return f"(Błąd odczytu PDF: {e})"
+        text = f"(Błąd odczytu PDF: {e})"
+    return text
 
 def extract_text_from_docx(path):
     try:
@@ -20,6 +35,16 @@ def extract_text_from_docx(path):
         return "\n".join([p.text for p in doc.paragraphs])
     except Exception as e:
         return f"(Błąd odczytu DOCX: {e})"
+
+def extract_text_from_odt(path):
+    try:
+        odt = load(path)
+        paragraphs = []
+        for elem in odt.getElementsByType(P):
+            paragraphs.append(str(elem))
+        return "\n".join(paragraphs)
+    except Exception as e:
+        return f"(Błąd odczytu ODT: {e})"
 
 def summarize(text, filename, folder):
     prompt = (
@@ -63,6 +88,8 @@ for folder in FOLDERS:
             text = extract_text_from_pdf(fpath)
         elif fname.lower().endswith(".docx"):
             text = extract_text_from_docx(fpath)
+        elif fname.lower().endswith(".odt"):
+            text = extract_text_from_odt(fpath)
         else:
             continue
 
