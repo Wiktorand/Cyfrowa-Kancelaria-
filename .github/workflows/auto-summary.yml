@@ -1,0 +1,36 @@
+name: Auto Summarize Documents
+
+on:
+  push:
+    paths:
+      - 'Cywilna/**'
+      - 'Apelacja/**'
+      - 'Egzekucja/**'
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pdfplumber python-docx openai
+
+      - name: Generate summaries
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python .github/scripts/auto_summary.py
+
+      - name: Commit summaries
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add Cywilna/knowledge.md Apelacja/knowledge.md Egzekucja/knowledge.md
+          git commit -m "Auto summary update" || echo "No changes"
+          git push || echo "Nothing to push"
