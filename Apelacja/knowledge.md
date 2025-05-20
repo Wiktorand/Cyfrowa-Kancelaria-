@@ -1,33 +1,33 @@
-# Baza wiedzy – Sprawy Cywilne
+# Baza wiedzy – Sprawy Apelacyjne
 
 ## Profil sprawy
-- Sygnatura główna: I C 2437/23
-- Sąd: Sąd Okręgowy we Wrocławiu, I Wydział Cywilny
-- Sędzia prowadzący: SSO Magdalena Sobczak-Chrzanowska
+- Sygnatura: II Ca 2440/24
+- Sąd: Sąd Okręgowy we Wrocławiu – wydział odwoławczy (cywilny)
+- Sędzia prowadzący: SSO Krzysztof Kermis
 - Status: sprawa w toku
-- Strony: Emil Łojczuk, Elżbieta Woźniak-Łojczuk (powodowie), Paweł Damm (pozwany)
+- Apelujący: Paweł Damm
+- Pełnomocnik apelującego: Wiktor Andrukiewicz
+- Skarżący (odpowiedź na apelację): Emil Łojczuk, Elżbieta Woźniak-Łojczuk
 - Pełnomocnik powodów: Radca prawny Marcin Bartyński
-- Pełnomocnik pozwanego: Wiktor Andrukiewicz
 
-## Kluczowe dokumenty (aktualizuj na bieżąco)
-- pozew-IC2437-23.docx – pozew, wersja ostateczna
-- czaty-klient-2025-05.pdf – historia rozmów z klientem
-- orzeczenie-2025-05-12.pdf – postanowienie z dnia 2025-05-12
+## Kluczowe dokumenty
+- apelacja-II-Ca-2440-24.docx – apelacja
+- odpowiedz-na-apelacje.docx – odpowiedź na apelację
+- orzeczenie-apelacyjne.pdf – orzeczenie sądu odwoławczego
 
 ## Najważniejsze argumenty i strategie
-- [Tu wpisz podsumowania argumentów, strategie, kluczowe orzeczenia SN]
-- [Aktualizuj po każdej analizie lub nowym dokumencie]
+- [Podsumuj główne zarzuty apelacji, kontrargumenty, precedensy]
+- [Aktualizuj po każdej analizie]
 
 ## Historia sprawy (timeline)
-- [Dodawaj kolejne etapy, np. data złożenia pozwu, odpowiedzi, rozprawy]
+- [Dodawaj kolejne etapy: data apelacji, odpowiedź, terminy rozpraw]
 
 ## Notatki zespołu AI
-- [Wpisuj wnioski z narad, rekomendacje, nietypowe strategie, symulacje rozpraw]
+- [Wnioski, rekomendacje, symulacje rozpraw, ocena szans]
 
 ## Wzory pism
-- [Lista wzorów pism dostępnych w folderze]
+- [Lista wzorów pism apelacyjnych]
 
 ---
 
-*Aktualizuj ten plik po każdej nowej czynności, dokumencie lub zmianie w sprawie!*
-
+*Aktualizuj ten plik po każdej nowej czynności lub dokumencie!*
