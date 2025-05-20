@@ -1,4 +1,4 @@
-name: Auto Summarize Documents (PDF, DOCX, ODT, OCR)
+ name: Auto Summarize Documents (PDF, DOCX, ODT, OCR)
 
 on:
   push:
