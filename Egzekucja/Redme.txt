@@ -1,2 +1,30 @@
-# Sprawa egzekucyjna
-Tu będą dokumenty dotyczące sprawy egzekucyjnej.
+# SPRAWA EGZEKUCYJNA – DOKUMENTACJA I WSKAZÓWKI
+
+## Opis sprawy
+
+Sprawy egzekucyjne i komornicze prowadzone przez Kancelarię Wiktora Andrukiewicza – wnioski egzekucyjne, skargi, dokumenty komornicze, symulacje działań egzekucyjnych.
+
+### Przykładowa sprawa:
+- Sygnatura: VIII Co 643/24
+- Sąd: Sąd Rejonowy we Wrocławiu, VIII Wydział Cywilny
+- Komornik: Agata Kwolek
+- Status: w toku
+
+## Kluczowe dokumenty (umieszczaj tu pliki):
+
+- wniosek-egzekucyjny.docx – wniosek o wszczęcie egzekucji
+- skarga-na-czynnosci-komornika.docx – skarga na komornika
+- protokol-egzekucji.pdf – protokół egzekucji
+
+## Wskazówki dla zespołu AI
+
+- Przed analizą sprawy, zapoznaj się z całą zawartością tego folderu.
+- Skup się na analizie procedur egzekucyjnych, skutecznych strategiach i praktycznych aspektach działań komorniczych.
+- Stosuj standardy formatowania i raportowania jak w całej kancelarii.
+- Po każdym zadaniu generuj raport jakości i status zgodności z przepisami.
+
+## Komendy przykładowe
+
+- „Sporządź wniosek egzekucyjny w stylu proceduralnym.”
+- „Przeanalizuj skargę na czynności komornika i zaproponuj strategię.”
+- „Zasymuluj działania komornika Agaty Kwolek w tej sprawie.”
