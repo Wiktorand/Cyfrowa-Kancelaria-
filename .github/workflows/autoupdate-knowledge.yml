@@ -1,4 +1,4 @@
-name: Auto-update knowledge.md
+ name: Auto-update knowledge.md
 
 on:
   push:
