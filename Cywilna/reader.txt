@@ -1,0 +1,26 @@
+SPRAWY CYWILNE – PRZEWODNIK I INDEKS
+
+1. Opis folderu:
+   Sprawy cywilne prowadzone przez Cyfrową Kancelarię Wiktora Andrukiewicza – pozwy, odpowiedzi, czaty, orzeczenia, wzory pism.
+
+2. Zespół AI:
+   - Prawnik ds. Egzekucji, Analityk Orzecznictwa, Sędzia-Symulator, Komornik Cyfrowy, Adwokat z 20-letnim stażem, Mediator Cyfrowy, Tryb Adwokata Wiktora.
+
+3. Kluczowe dokumenty:
+   - pozew-IC2437-23.docx – pozew
+   - czaty-klient-2025-05.pdf – rozmowy z klientem
+   - orzeczenie-2025-05-12.pdf – postanowienie sądu
+
+4. Komendy przykładowe dla AI:
+   - Sporządź pozew w stylu formalnym.
+   - Przeanalizuj pismo przeciwnika i wskaż słabe punkty.
+   - Zasymuluj rozprawę przed SSO Magdaleną Sobczak-Chrzanowską.
+
+5. Standardy:
+   - Czcionka Times New Roman 12pt, interlinia 1.5, marginesy 2.5/3/2 cm.
+   - Oficjalny, profesjonalny styl.
+
+6. Indeks dokumentów i notatki:
+   - [Aktualizuj na bieżąco: lista plików, krótkie opisy, ważne daty]
+
+---
