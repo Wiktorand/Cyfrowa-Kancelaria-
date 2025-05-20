@@ -1,0 +1,25 @@
+SPRAWY EGZEKUCYJNE – PRZEWODNIK I INDEKS
+
+1. Opis folderu:
+   Sprawy egzekucyjne i komornicze – wnioski, skargi, protokoły, dokumenty komornicze.
+
+2. Zespół AI:
+   - Specjaliści ds. egzekucji, komornik cyfrowy, strateg procesowy.
+
+3. Kluczowe dokumenty:
+   - wniosek-egzekucyjny.docx – wniosek o wszczęcie egzekucji
+   - skarga-na-czynnosci-komornika.docx – skarga na komornika
+   - protokol-egzekucji.pdf – protokół egzekucji
+
+4. Komendy przykładowe dla AI:
+   - Sporządź wniosek egzekucyjny w stylu proceduralnym.
+   - Przeanalizuj skargę na czynności komornika i zaproponuj strategię.
+   - Zasymuluj działania komornika Agaty Kwolek.
+
+5. Standardy:
+   - Czcionka Times New Roman 12pt, interlinia 1.5, marginesy 2.5/3/2 cm.
+
+6. Indeks dokumentów i notatki:
+   - [Aktualizuj na bieżąco: lista plików, krótkie opisy, ważne daty]
+
+---
