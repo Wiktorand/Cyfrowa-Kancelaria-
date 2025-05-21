@@ -36,6 +36,14 @@ def extract_text_from_docx(path):
     except Exception as e:
         return f"(Błąd odczytu DOCX: {e})"
 
+def extract_text_from_doc(path):
+    # Obsługa starszego formatu .doc (zakładamy, że jest konwertowany do tekstu)
+    try:
+        doc = Document(path)  # python-docx może czasem obsłużyć .doc, jeśli jest kompatybilny
+        return "\n".join([p.text for p in doc.paragraphs])
+    except Exception as e:
+        return f"(Błąd odczytu DOC: {e})"
+
 def extract_text_from_odt(path):
     try:
         odt = load(path)
@@ -45,6 +53,13 @@ def extract_text_from_odt(path):
         return "\n".join(paragraphs)
     except Exception as e:
         return f"(Błąd odczytu ODT: {e})"
+
+def extract_text_from_txt(path):
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return f.read()
+    except Exception as e:
+        return f"(Błąd odczytu TXT: {e})"
 
 def summarize(text, filename, folder):
     prompt = (
@@ -67,6 +82,7 @@ for folder in FOLDERS:
     if not os.path.isdir(folder_path):
         continue
 
+    print(f"Przetwarzam folder: {folder}")
     summaries = []
     for fname in os.listdir(folder_path):
         if fname.lower() in ["knowledge.md", "reader.txt", "readme.md"]:
@@ -75,29 +91,45 @@ for folder in FOLDERS:
         if not os.path.isfile(fpath):
             continue
 
-        # Sprawdź, czy streszczenie już istnieje w knowledge.md
+        print(f"Znaleziono plik: {fname}")
+        # Sprawdź, czy streszczenie już istnieje w knowledge.md - tymczasowo wyłączone dla testów
         summary_tag = f"### {fname}"
         knowledge_path = os.path.join(folder_path, "knowledge.md")
-        if os.path.exists(knowledge_path):
-            with open(knowledge_path, "r", encoding="utf-8") as kf:
-                if summary_tag in kf.read():
-                    continue  # już podsumowane
+        # if os.path.exists(knowledge_path):
+        #     with open(knowledge_path, "r", encoding="utf-8") as kf:
+        #         if summary_tag in kf.read():
+        #             print(f"Streszczenie dla {fname} już istnieje, pomijam.")
+        #             continue  # już podsumowane
 
         # Ekstrakcja tekstu
         if fname.lower().endswith(".pdf"):
             text = extract_text_from_pdf(fpath)
+            print(f"Wygenerowano tekst z PDF: {fname}, długość: {len(text)} znaków")
         elif fname.lower().endswith(".docx"):
             text = extract_text_from_docx(fpath)
+            print(f"Wygenerowano tekst z DOCX: {fname}, długość: {len(text)} znaków")
+        elif fname.lower().endswith(".doc"):
+            text = extract_text_from_doc(fpath)
+            print(f"Wygenerowano tekst z DOC: {fname}, długość: {len(text)} znaków")
         elif fname.lower().endswith(".odt"):
             text = extract_text_from_odt(fpath)
+            print(f"Wygenerowano tekst z ODT: {fname}, długość: {len(text)} znaków")
+        elif fname.lower().endswith(".txt"):
+            text = extract_text_from_txt(fpath)
+            print(f"Wygenerowano tekst z TXT: {fname}, długość: {len(text)} znaków")
         else:
+            print(f"Nieobsługiwany format pliku: {fname}, pomijam.")
             continue
 
         # Generowanie streszczenia
         summary = summarize(text, fname, folder)
+        print(f"Wygenerowano streszczenie dla: {fname}")
         summaries.append(f"### {fname}\n{summary}\n")
 
     # Dopisz nowe streszczenia do knowledge.md
     if summaries:
         with open(os.path.join(folder_path, "knowledge.md"), "a", encoding="utf-8") as kf:
             kf.write("\n".join(summaries))
+            print(f"Dopisano {len(summaries)} streszczeń do {knowledge_path}")
+    else:
+        print(f"Brak nowych streszczeń do dopisania w folderze {folder}")
