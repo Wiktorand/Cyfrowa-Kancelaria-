@@ -13,9 +13,9 @@ Sprawy cywilne prowadzone przez Kancelarię Wiktora Andrukiewicza – w szczegó
 
 ## Kluczowe dokumenty (umieszczaj tu pliki):
 
-- pozew-IC2437-23.docx – pozew, wersja ostateczna
-- czaty-klient-2025-05.pdf – historia rozmów z klientem
-- orzeczenie-2025-05-12.pdf – postanowienie z dnia 2025-05-12
+- https://github.com/Wiktorand/Cyfrowa-Kancelaria-/blob/main/Cywilna/czat%20lojczuk.docx
+- https://github.com/Wiktorand/Cyfrowa-Kancelaria-/blob/main/Cywilna/kilka%20odpowiedzi%20na%20pozew.docx
+- https://github.com/Wiktorand/Cyfrowa-Kancelaria-/blob/main/Cywilna/prawie%20kompletna%20odpowiedz.docx
 
 ## Wskazówki dla zespołu AI
 
