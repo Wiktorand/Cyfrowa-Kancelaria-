@@ -1,21 +1,9 @@
-import os
-import openai
-
-openai.api_key = os.getenv("OPENAI_API_KEY")
-print("Testuję klucz API:", openai.api_key[:8], "...")
-
-try:
-    response = openai.ChatCompletion.create(
-        model="gpt-4-turbo",
-        messages=[{"role": "user", "content": "Test API"}],
-        max_tokens=10
-    )
-    print("Odpowiedź z OpenAI:", response.choices[0].message["content"])
-except Exception as e:
-    print("Błąd połączenia z OpenAI:", e)
-
-
 name: Auto Summarize Documents (PDF, DOCX, ODT, OCR)
+
+permissions:
+  contents: write  # Nadaje uprawnienia do zapisu w repozytorium
+  actions: read
+  checks: read
 
 on:
   push:
