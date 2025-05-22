@@ -7,7 +7,19 @@ from docx import Document
 from odf.opendocument import load
 from odf.text import P
 
+# Sprawdź klucz API
 openai.api_key = os.getenv("OPENAI_API_KEY")
+print("Testuję klucz API:", openai.api_key[:8] if openai.api_key else "Brak klucza", "...")
+
+try:
+    response = openai.ChatCompletion.create(
+        model="gpt-4-turbo",
+        messages=[{"role": "user", "content": "Test API"}],
+        max_tokens=10
+    )
+    print("Odpowiedź z OpenAI:", response.choices[0].message["content"])
+except Exception as e:
+    print("Błąd połączenia z OpenAI:", e)
 
 FOLDERS = ["Cywilna", "Apelacja", "Egzekucja"]
 
@@ -37,7 +49,6 @@ def extract_text_from_docx(path):
         return f"(Błąd odczytu DOCX: {e})"
 
 def extract_text_from_doc(path):
-    # Obsługa starszego formatu .doc (zakładamy, że jest konwertowany do tekstu)
     try:
         doc = Document(path)  # python-docx może czasem obsłużyć .doc, jeśli jest kompatybilny
         return "\n".join([p.text for p in doc.paragraphs])
@@ -80,6 +91,7 @@ def summarize(text, filename, folder):
 for folder in FOLDERS:
     folder_path = os.path.join(os.getcwd(), folder)
     if not os.path.isdir(folder_path):
+        print(f"Folder {folder} nie istnieje, pomijam.")
         continue
 
     print(f"Przetwarzam folder: {folder}")
