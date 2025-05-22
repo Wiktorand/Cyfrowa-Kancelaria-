@@ -1,31 +1,15 @@
-# Baza wiedzy – Sprawy Cywilne
+# Indeks dokumentów – Cywilna
 
-## Profil sprawy
-- **Sygnatura główna**: I C 2437/23
-- **Sąd**: Sąd Okręgowy we Wrocławiu, I Wydział Cywilny
-- **Sędzia prowadzący**: SSO Magdalena Sobczak-Chrzanowska
-- **Status**: sprawa w toku
-- **Strony**: Emil Łojczuk, Elżbieta Woźniak-Łojczuk (powodowie), Paweł Damm (pozwany)
-- **Pełnomocnik powodów**: Radca prawny Marcin Bartyński
-- **Pełnomocnik pozwanego**: Wiktor Andrukiewicz
+**Ostatnia aktualizacja:** 2025-05-22 12:18
 
-## Kluczowe dokumenty (aktualizuj na bieżąco)
-- pozew-IC2437-23.docx – pozew, wersja ostateczna
-- czaty-klient-2025-05.pdf – historia rozmów z klientem
-- orzeczenie-2025-05-12.pdf – postanowienie z dnia 2025-05-12
+## Lista plików:
 
-## Najważniejsze argumenty i strategie
-[Tu wpisz podsumowania argumentów, strategie, kluczowe orzeczenia SN]
-[Aktualizuj po każdej analizie lub nowym dokumencie]
+- **prawie kompletna odpowiedz.doc** (DOC, 23504 bajtów, dodano: 2025-05-22 12:18)
+- **prawie kompletna odpowiedz.docx** (DOCX, 23504 bajtów, dodano: 2025-05-22 12:18)
+- **kilka odpowiedzi na pozew.docx** (DOCX, 54059 bajtów, dodano: 2025-05-22 12:18)
+- **czat lojczuk.docx** (DOCX, 152976 bajtów, dodano: 2025-05-22 12:18)
 
-## Historia sprawy (timeline)
-[Dodawaj kolejne etapy, np. data złożenia pozwu, odpowiedzi, rozprawy]
+---
+## Notatki i podsumowania (do uzupełnienia przez zespół):
 
-## Notatki zespołu AI
-[Wpisuj wnioski z narad, rekomendacje, nietypowe strategie, symulacje rozpraw]
-
-## Wzory pism
-[Lista wzorów pism dostępnych w folderze]
-
-## Streszczenia dokumentów
-<!-- Tutaj będą automatycznie dodawane streszczenia przez GitHub Actions -->
+- [Dodaj tu streszczenia, kluczowe informacje, komentarze do nowych dokumentów]
