@@ -1,3 +1,14 @@
+import os
+
+# Sprawdź, czy klucz API jest dostępny
+openai_key = os.getenv("OPENAI_API_KEY")
+if not openai_key:
+    print("BŁĄD: Brak klucza API OpenAI w zmiennej środowiskowej OPENAI_API_KEY")
+else:
+    print("Klucz API wykryty:", openai_key[:8] + "..." )  # Pokazuje pierwsze 8 znaków dla potwierdzenia
+
+# Reszta kodu...
+
 name: Auto Summarize Documents (PDF, DOCX, ODT, OCR)
 
 on:
