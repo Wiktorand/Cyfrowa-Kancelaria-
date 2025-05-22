@@ -1,12 +1,29 @@
-# Indeks dokumentów – Egzekucja
+# Baza wiedzy – Sprawy Egzekucyjne
 
-**Ostatnia aktualizacja:** 2025-05-22 12:24
+## Profil sprawy
+- **Sygnatura główna**: [Wstaw sygnaturę]
+- **Sąd**: [Wstaw sąd]
+- **Sędzia prowadzący**: [Wstaw sędziego]
+- **Status**: [Wstaw status]
+- **Strony**: [Wstaw strony]
+- **Pełnomocnik powodów**: [Wstaw pełnomocnika]
+- **Pełnomocnik pozwanego**: [Wstaw pełnomocnika]
 
-## Lista plików:
+## Kluczowe dokumenty (aktualizuj na bieżąco)
+- [Wstaw listę dokumentów]
 
-- **Redme.txt** (TXT, 1229 bajtów, dodano: 2025-05-22 12:24)
+## Najważniejsze argumenty i strategie
+[Tu wpisz podsumowania argumentów, strategie, kluczowe orzeczenia SN]
+[Aktualizuj po każdej analizie lub nowym dokumencie]
 
----
-## Notatki i podsumowania (do uzupełnienia przez zespół):
+## Historia sprawy (timeline)
+[Dodawaj kolejne etapy, np. data złożenia wniosku egzekucyjnego, odpowiedzi, rozprawy]
 
-- [Dodaj tu streszczenia, kluczowe informacje, komentarze do nowych dokumentów]
+## Notatki zespołu AI
+[Wpisuj wnioski z narad, rekomendacje, nietypowe strategie, symulacje rozpraw]
+
+## Wzory pism
+[Lista wzorów pism dostępnych w folderze]
+
+## Streszczenia dokumentów
+<!-- Tutaj będą automatycznie dodawane streszczenia przez GitHub Actions -->
