@@ -1,8 +1,32 @@
-# Indeks dokumentów – Apelacja
+# Baza wiedzy – Sprawy Apelacyjne
 
-**Ostatnia aktualizacja:** 2025-05-22 12:26
+## Profil sprawy
+- **Sygnatura główna**: [Wstaw sygnaturę]
+- **Sąd**: [Wstaw sąd]
+- **Sędzia prowadzący**: [Wstaw sędziego]
+- **Status**: [Wstaw status]
+- **Strony**: [Wstaw strony]
+- **Pełnomocnik powodów**: [Wstaw pełnomocnika]
+- **Pełnomocnik pozwanego**: [Wstaw pełnomocnika]
 
-## Lista plików:
+## Kluczowe dokumenty (aktualizuj na bieżąco)
+- [Wstaw listę dokumentów]
+
+## Najważniejsze argumenty i strategie
+[Tu wpisz podsumowania argumentów, strategie, kluczowe orzeczenia SN]
+[Aktualizuj po każdej analizie lub nowym dokumencie]
+
+## Historia sprawy (timeline)
+[Dodawaj kolejne etapy, np. data złożenia apelacji, odpowiedzi, rozprawy]
+
+## Notatki zespołu AI
+[Wpisuj wnioski z narad, rekomendacje, nietypowe strategie, symulacje rozpraw]
+
+## Wzory pism
+[Lista wzorów pism dostępnych w folderze]
+
+## Streszczenia dokumentów
+<!-- Tutaj będą automatycznie dodawane streszczenia przez GitHub Actions -->
 
 - **155025000000503_I_C_2437_23_20250407_id76954409_doreczenie_poswiadczonej_za_zgodnosc_z_oryginalem_kserokopii_pozwu_zgodnie_z_wnioskiem_informacja_sad_okregowy_we_wroclawiu.docx** (DOCX, 21852 bajtów, dodano: 2025-05-22 12:26)
 - **155025000001003_II_Ca_2440_24_20250211_id75756162_prosba_o_nadeslanie_kserokopii_z_akt_oraz_informacji_o_stanie_sprawy_i_c_2437_23_sad_okregowy_we_wroclawiu.docx** (DOCX, 21684 bajtów, dodano: 2025-05-22 12:26)
