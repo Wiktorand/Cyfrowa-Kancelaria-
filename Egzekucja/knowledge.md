@@ -1,10 +1,10 @@
 # Indeks dokumentów – Egzekucja
 
-**Ostatnia aktualizacja:** 2025-05-22 12:18
+**Ostatnia aktualizacja:** 2025-05-22 12:21
 
 ## Lista plików:
 
-- **Redme.txt** (TXT, 1229 bajtów, dodano: 2025-05-22 12:18)
+- **Redme.txt** (TXT, 1229 bajtów, dodano: 2025-05-22 12:21)
 
 ---
 ## Notatki i podsumowania (do uzupełnienia przez zespół):
